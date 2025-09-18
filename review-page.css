@@ -1,0 +1,39 @@
+:root {
+    --primary-color: purple;
+    --primary-font-size: 0.9rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    a {
+        color: inherit;
+        /* selects from the most nearest element */
+        text-decoration: none;
+    }
+    /* only applies to links inside headers */
+}
+/* nested css! */
+
+body {
+    color: var(--primary-color);
+    font-size: var(--primary-font-size);
+    header {
+        h1 {
+            color: var(--primary-color);
+            font-size: calc(var(--primary-font-size) * 4);
+        }
+    }
+    article {
+            h2 {
+                &.post-date {
+                    color: var(--primary-color);
+                }
+                /* lets it know that the class is ATTATCHED to the h2, not inside */
+            }
+            .post-content {
+                h2 {
+                    color: grey;
+                }
+            }
+        }
+}

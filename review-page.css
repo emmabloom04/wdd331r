@@ -1,8 +1,9 @@
 :root {
-    --primary-color: purple;
+    --primary-color: black;
     --primary-font-size: 0.9rem;
+    --light-grey: #E8E7E3;
+    --dark-grey: #949494;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     a {
@@ -21,18 +22,58 @@ body {
         h1 {
             color: var(--primary-color);
             font-size: calc(var(--primary-font-size) * 4);
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+    nav {
+        border-top: var(--light-grey) 1px solid;
+        border-bottom: var(--light-grey) 1px solid;
+        ul {
+            text-align: center;
+            list-style: none;
+            li {
+                padding: .5rem;
+            }
+            a {
+                text-decoration: none;
+                color: var(--dark-grey);
+                text-transform: uppercase;
+            }
         }
     }
     article {
             h2 {
                 &.post-date {
                     color: var(--primary-color);
+                    border-bottom: var(--light-grey) 1px solid;
+                    padding: 1rem;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    text-align: right;
                 }
                 /* lets it know that the class is ATTATCHED to the h2, not inside */
             }
+            a {
+                text-decoration: none;
+                color: var(--dark-grey);
+            }
             .post-content {
                 h2 {
-                    color: grey;
+                    color: var(--dark-grey);
+                    font-weight: lighter;
+                    margin: 1rem;
+                    text-align: left;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+                p {
+                    font-size: calc(var(--primary-font-size) * 1.5);
+                    margin: 2rem;
+                }
+                figure {
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }

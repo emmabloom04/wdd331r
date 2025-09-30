@@ -27,6 +27,8 @@ $spacing: 1rem;
     justify-content: center;
     align-items: center;
 }
+// kinda like functions for css
+// recommended to put at the top of the file or even in its own file
 
 .card {
     @include flex-center;

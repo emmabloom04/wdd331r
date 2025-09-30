@@ -1,0 +1,29 @@
+// Variables
+$primary: #3498db
+$secondary: #2ecc71
+$spacing: 1rem
+
+// Nesting
+.container
+    padding: $spacing * 2
+
+    .header
+        background: $primary
+        color: white
+
+        &:hover
+            background: darken($primary, 10%)
+
+    .content
+        margin: $spacing 10000px
+
+// Mixins
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+.card
+    @include flex-center
+    padding: $spacing
+    background: $secondary

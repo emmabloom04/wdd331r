@@ -7,6 +7,8 @@ npm install sass --save-dev
 
 ### Basic Command
 [pnpm|npm] sass [input] [output]
+For your machine, to run it locally, run
+npx sass [input] [output]
 
 ### Watch (flag)
 --watch

@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
   }
 }

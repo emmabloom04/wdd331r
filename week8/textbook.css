@@ -21,3 +21,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+.alert-p {
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}

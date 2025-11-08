@@ -20,6 +20,9 @@ body {
     margin: 0 auto;
     font-family: Recursive, sans-serif;
 }
+h1, h2 {
+    --wght: 700;
+}
 .alert-svg {
     width: 40px;
 }
@@ -42,4 +45,7 @@ body {
 .alert-p {
     border-left: 2px solid gray;
     padding-left: 15px;
+}
+.bold {
+    --wght: 800;
 }

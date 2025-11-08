@@ -5,3 +5,13 @@ body {
 .alert-svg {
     width: 40px;
 }
+.alert-container {
+    width: 40px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    svg {
+        justify-self: center;
+    }
+}

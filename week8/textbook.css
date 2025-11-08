@@ -1,0 +1,7 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.alert-svg {
+    width: 40px;
+}
